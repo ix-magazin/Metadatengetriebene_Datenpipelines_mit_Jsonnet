@@ -1,0 +1,18 @@
+{
+   "constraints": [
+      "select case when count(*) = count(id) then 'true' else 'false' end as test_passed from employee"
+   ],
+   "import_sql": "select id, first_name from employee",
+   "name": "employee",
+   "run_checks_hours": [
+      0
+   ],
+   "run_import_hours": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20
+   ]
+}
